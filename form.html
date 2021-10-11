@@ -1,0 +1,23 @@
+<html>
+<head>
+    <title> Form </title>
+    <script src="form.js"></script>
+</head>
+
+
+<body>
+<div id="formContainer">
+    <h1> Form </h1>
+        <form name="f1" action = "authentication.php" onsubmit = "return validation()" method = "POST">  
+    <div id="header"></div>
+    <input type="email" placeholder="email" id="email"/>
+    <input type="password" placeholder="password" id="password"/>
+
+    <button onclick="signUp()" id="signUp"> Sign Up </button>
+    <button onclick="LogIn()" id="LogIn"> Log In </button>
+    <button onclick="LogOut()" id="LogOut"> Log Out </button>
+
+</div>
+</body>
+
+</html>
