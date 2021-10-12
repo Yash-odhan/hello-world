@@ -19,11 +19,24 @@
             <p>     
                 <input type =  "submit" id = "btn" value = "Login" />  
             </p>  
+            
+        </form>
+        New User?? Register here.
+        <form name="f2" action="register.php" onsubmit="return validation()" method="POST">
+            <p>  
+                <label> UserName: </label>  
+                <input type = "text" id ="user" name  = "user" />  
+            </p>  
+            <p>  
+                <label> Password: </label>  
+                <input type = "password" id ="pass" name  = "pass" />  
+            </p>  
+            
             <p>     
                 <input type =  "submit" id = "signUp" value = "Sign Up" />  
             </p>  
 
-        </form>  
+        </form>
     </div>  
     <script>  
             function validation()  
