@@ -25,7 +25,7 @@
     </div>
     <div>
         New User?? Register here.
-        <form name="f2" action="register.php" onsubmit="return validation()" method="POST">
+        <form name="f2" action="register.php" onsubmit="return validation2()" method="POST">
             <p>  
                 <label> UserName: </label>  
                 <input type = "text" id ="user" name  = "user" />  
@@ -61,7 +61,27 @@
                     return false;  
                     }  
                 }                             
-            }  
+            }
+            function validation2()  
+            {  
+                var id=document.f2.user.value;  
+                var ps=document.f2.pass.value;  
+                if(id.length=="" && ps.length=="") {  
+                    alert("User Name and Password fields are empty");  
+                    return false;  
+                }  
+                else  
+                {  
+                    if(id.length=="") {  
+                        alert("User Name is empty");  
+                        return false;  
+                    }   
+                    if (ps.length=="") {  
+                    alert("Password field is empty");  
+                    return false;  
+                    }  
+                }                             
+            }
         </script>  
 </body>     
 </html>  
