@@ -1,4 +1,5 @@
 <?php      
+    echo "Helllllo";
     include('connection.php');  
     $username = $_POST['user'];  
     $password = $_POST['pass'];  
