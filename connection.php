@@ -3,7 +3,7 @@
     $user = "root";  
     $password = '';  
     $db_name = "logins";  
-    $mysqli = new mysqli("127.0.0.1","root","","mysql");
+    $mysqli = new mysqli("127.0.0.1","root","","logins");
 
     // Check connection
     if ($mysqli -> connect_errno) {
