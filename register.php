@@ -11,7 +11,7 @@
       
         $sql = "insert into login values('$username', '$password')";  
         $result = mysqli_query($con, $sql);  
-if (result === TRUE) {
+if ($result === TRUE) {
   echo "New record created successfully";
 } else {
   echo "Error: " . $sql . "<br>" . $conn->error;
